@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	
+	<!-- Root Context: defines shared resources visible to all other web components -->
+		
+		<bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+		<property name="maxUploadSize" value="50000000" />
+		</bean>
+		
+		<bean id="jobDAO" class="com.jobfinder.myjobfinder.dao.JobDAO">
+		</bean>	
+		
+		<bean id="jobApplicationDAO" class="com.jobfinder.myjobfinder.dao.JobApplicationDAO">
+		</bean>				
+		
+		<bean id="jobCategoryDAO" class="com.jobfinder.myjobfinder.dao.JobCategoryDAO">
+		</bean>
+		
+		<bean id="recruiterDAO" class="com.jobfinder.myjobfinder.dao.RecruiterDAO">
+		</bean>		
+		
+		<bean id="userProfileDAO" class="com.jobfinder.myjobfinder.dao.UserProfileDAO">
+		</bean>	
+		
+		<bean id="credentialDAO" class="com.jobfinder.myjobfinder.dao.CredentialDAO">
+		</bean>			
+		
+		<bean id="loginDAO" class="com.jobfinder.myjobfinder.dao.LoginDAO">
+		</bean>	
+		
+					
+		
+		<bean id="createJobValidator" class="com.jobfinder.myjobfinder.validator.CreateJobValidator">
+		</bean>
+		
+		<bean id="userProfileValidator" class="com.jobfinder.myjobfinder.validator.UserProfileValidator">
+		</bean>
+		
+		<bean id="recruiterValidator" class="com.jobfinder.myjobfinder.validator.RecruiterValidator">
+		</bean>
+		
+		<bean id="credentialValidator" class="com.jobfinder.myjobfinder.validator.CredentialValidator">
+		</bean>																								
+		
+</beans>

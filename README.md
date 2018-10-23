@@ -1,7 +1,7 @@
 # job-finder
 A job search and application service using Spring MVC, Hibernate and JSTL
 
-To run this application locally: 
+To run this application locally:
 
 1. Create an instance of MySQL server running on localhost port 3306 (default).
 

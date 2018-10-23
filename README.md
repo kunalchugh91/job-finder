@@ -7,8 +7,8 @@ To run this application locally:
 
 2. Open and run the MySQLDatabaseSetup.sql file
 
-3. Package the project into a war
-   mvn package
+3. Package the project into a war.
+   (mvn package)
 
 4. Copy the war file into tomcat webapps directory.
 
